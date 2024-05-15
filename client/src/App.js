@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes,Route,BrowserRouter} from 'react-router-dom';
 import AddPFE from './components/pages/AddPFE';
+import AboutUs from './components/AboutUs/AboutUs';
 import ListPFE from './components/pages/ListPFE';
 import MonPFE from './components/pages/MonPFE';
 import Registre from './registrationPage/Registre';
@@ -94,7 +95,7 @@ function App() {
             <Route path='/cord/myPfe' element={<MonPfeCor/>} />
           </Route>
 
-        
+          <Route path="/AboutUs" element={<AboutUs />} />
 
         </Routes> 
 

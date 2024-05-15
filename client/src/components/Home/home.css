@@ -7,6 +7,8 @@
     display:inline-block;
     background-color:var(--color-1);
 }
+
+
 .nav__logo{
     width:120px;
 }

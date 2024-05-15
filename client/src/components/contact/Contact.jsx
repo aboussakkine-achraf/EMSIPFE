@@ -53,7 +53,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="log__copy font-small my-1 px-1">&#169; 2023 Institut National des Postes et Télécommunications</div>
+            <div className="log__copy font-small my-1 px-1">&#169; Copyright 2024 EMSI.</div>
         </div>
         <div className='backimage lg:w-[50%] w-full bg-cover mix-blend-overlay flex justify-center text-center items-center'>
             <div className='w-[70%] h-[80%] flex justify-center text-center items-center'>
