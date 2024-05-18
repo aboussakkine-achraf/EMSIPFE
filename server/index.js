@@ -27,7 +27,7 @@ app.use(cors({credentials:true,origin: 'http://localhost:3000'}));
 //connect database
 
 
-mongoose.connect('mongodb://localhost:27017/emsi',{
+mongoose.connect('mongodb+srv://aboussakkine:PjKRp8HQomW5L97n@cluster0.1tjkxgp.mongodb.net/emsi?retryWrites=true&w=majority&appName=Cluster0',{
 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
