@@ -17,7 +17,7 @@ const Connexion = () => {
 
     async function login(e){
         e.preventDefault();
-        const res=await fetch('http://localhost:4000/login',{
+        const res=await fetch('https://emsipfe.vercel.app/login',{
             method:'POST',
             body:JSON.stringify({email,password}),
             headers:{'Content-Type':'application/json'},
@@ -34,7 +34,7 @@ const Connexion = () => {
     }
 
     useEffect(()=>{
-        fetch('http://localhost:4000/login',{
+        fetch('https://emsipfe.vercel.app/login',{
             credentials:"include"
         }).then(res=>{
             res.json().then(user=>{
