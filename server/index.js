@@ -36,6 +36,11 @@ mongoose.connect('mongodb+srv://aboussakkine:PjKRp8HQomW5L97n@cluster0.1tjkxgp.m
 
 //// midlwares
 
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+  });
+  
+
 app.post('/addUser',async (req,res)=>{
     const {nom,prenom,filier,specialite,email,password,role}=req.body
     try{
