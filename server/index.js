@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 var bcrypt = require('bcryptjs');
 const jwt=require('jsonwebtoken');
 const cookieParser=require('cookie-parser');
-const multer = require('multer');
+
 
 //matcher
 var stringSimilarity = require("string-similarity");
@@ -22,7 +22,12 @@ const salt=bcrypt.genSaltSync(10);
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({credentials:true,origin: 'https://emsipfe.vercel.app/'}));
+// app.use(cors({credentials:true,origin: 'https://emsipfe.vercel.app/'}));
+app.use(cors({
+    credentials: true,
+    origin: 'https://emsipfe.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+  }));
 
 //connect database
 
