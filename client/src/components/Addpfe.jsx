@@ -19,7 +19,7 @@ const Addpfe = () => {
 
   const fetchEntrepriseOptions = async () => {
     try {
-      const response = await fetch('http://localhost:4000/listeEntreprise');
+      const response = await fetch('https://emsipfe.vercel.app/listeEntreprise');
       if (response.ok) {
         const data = await response.json();
         setEntrepriseOptions(data); // Update the entrepriseOptions state with fetched data
