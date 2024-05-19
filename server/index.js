@@ -25,7 +25,7 @@ app.use(cookieParser());
 // app.use(cors({credentials:true,origin: 'https://emsipfe.vercel.app/'}));
 app.use(cors({
     credentials: true,
-    origin: 'https://emsipfe.vercel.app/',
+    origin: 'https://emsipfe.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE']
   }));
 
