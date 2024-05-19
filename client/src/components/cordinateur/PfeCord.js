@@ -10,7 +10,7 @@ function PfeCord() {
     const data=location.state;
 
     async function encadrer(){
-        const resp=await fetch('http://localhost:4000/encadrer',{
+        const resp=await fetch('https://emsipfe.vercel.app/encadrer',{
             method:'PUT',
             body:JSON.stringify({id:data._id}),
             headers:{'Content-Type':'application/json'},

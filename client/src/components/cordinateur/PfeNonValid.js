@@ -11,7 +11,7 @@ function PfeNonValid() {
     const data=location.state;
     
     async function valider(e){
-        const resp=await fetch('http://localhost:4000/valider',{
+        const resp=await fetch('https://emsipfe.vercel.app/valider',{
             method:'PUT',
             body:JSON.stringify({id:data._id}),
             headers:{'Content-Type':'application/json'},

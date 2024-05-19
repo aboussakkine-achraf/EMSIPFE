@@ -12,7 +12,7 @@ const ListUsers = () => {
   const [searchTerm, setSearchTerm] = useState('');
   
   useEffect(()=>{
-    fetch('http://localhost:4000/listUsers',{
+    fetch('https://emsipfe.vercel.app/listUsers',{
       credentials:'include',
     }).then(res=>{
     res.json().then(data=>{

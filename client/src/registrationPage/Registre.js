@@ -15,7 +15,7 @@ function Registre() {
   async function regist(e){
     e.preventDefault();
     if(confirmPassword==password){
-      const res=  await fetch('http://localhost:4000/registre',{
+      const res=  await fetch('https://emsipfe.vercel.app/registre',{
             method:'POST',
             body:JSON.stringify({nom,prenom,filier,email,password}),
             headers:{'Content-Type':'application/json'}
