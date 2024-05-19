@@ -6,7 +6,7 @@ function MyPfeEtudiat() {
     const [monPfe,setMonPfe]=useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:4000/monPfeEtudiant',{
+        fetch('https://emsipfe.vercel.app/monPfeEtudiant',{
             credentials:'include',
         }).then(res=>{
             res.json().then(async (data)=>{

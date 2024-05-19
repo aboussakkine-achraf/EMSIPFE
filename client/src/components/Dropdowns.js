@@ -30,7 +30,7 @@ function Dropdowns({childrent}) {
   
 
   function logout(){
-    fetch('http://localhost:4000/logout',{
+    fetch('https://emsipfe.vercel.app/logout',{
       credentials:"include",
       method:'POST'
     })

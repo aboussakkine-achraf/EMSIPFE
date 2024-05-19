@@ -31,7 +31,7 @@ const UpdateEntreprise = () => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({nom,secteur,Representant,emailRep,numeroRep,Localisation,email,numero})
         };
-        fetch(`http://localhost:4000/Admin/updateEntreprise/${data._id}`, requestOptions)
+        fetch(`https://emsipfe.vercel.app/updateEntreprise/${data._id}`, requestOptions)
           .then(response => response.json())
           .then(data => console.log(data));
    
