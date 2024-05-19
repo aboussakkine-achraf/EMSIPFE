@@ -34,7 +34,7 @@ const Addpfe = () => {
   async function nouveauPfe(e) {
     if (!quitter) {
       e.preventDefault();
-      const response = await fetch('http://localhost:4000/addpfe', {
+      const response = await fetch('https://emsipfe.vercel.app/addpfe', {
         method: 'POST',
         body: JSON.stringify({ titre, domainEtude, problematique, entreprise: selectedEntreprise, description }),
         headers: { 'Content-Type': 'application/json' },
