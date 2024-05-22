@@ -17,7 +17,7 @@ This article introduces our user-friendly platform designed to manage a universi
 - [Video Demonstration](#Video-Demonstration)
 - [Contributing](#contributing)
 
-##O verview
+## Overview
 
 The project iss about our user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
 
