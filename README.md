@@ -21,3 +21,7 @@ This article introduces our user-friendly platform designed to manage a universi
 
 The project iss about our user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
 
+## Software architecture
+![Sans titre](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/3e1a7db1-e05f-4387-9a82-9e9ec5fd1488)
+
+
