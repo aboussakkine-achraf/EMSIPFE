@@ -18,7 +18,7 @@ This article introduces our user-friendly platform designed to manage a universi
 
 ## Overview
 
-The project is about our user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
+The project is a user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
 
 ## Software Architecture
 ![mern-stack-b9q1kbudz0](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/9015892a-3a24-4cf8-bf13-0e909314a74f)
@@ -34,7 +34,7 @@ This project uses the MERN stack architecture, which is a powerful, full-stack J
 
 ### Frontend Project Structure
 
-The Angular front-end project is organized around ten main components, each serving a specific purpose and contributing to the overall architecture and maintainability of the application.
+The React front-end project is organized around ten main components, each serving a specific purpose and contributing to the overall architecture and maintainability of the application.
 
 #### 1. ABOUT US Component
 
@@ -49,22 +49,22 @@ The Angular front-end project is organized around ten main components, each serv
 #### 3. ADMIN Component
 
 - **Purpose:** The ADMIN component manages administrative tasks within the application.
-- **Functionality:** It aggregates data from various sources and presents it in a visually appealing and informative manner.
+- **Functionality:** Add users, add companies, and manage final year projects (PFEs).
 
 #### 4. COORDINATEUR Component
 
 - **Purpose:** The COORDINATEUR component handles the modification of existing data or entities related to coordinators.
-- **Functionality:** Users can access and edit information, with changes reflected in real-time or upon submission.
+- **Functionality:** Validate final year project (PFE) subjects.
 
 #### 5. ETUDIANT Component
 
-- **Purpose:** The ETUDIANT component acts as the main entry point of the application for students, providing a landing page or initial interface.
-- **Functionality:** It includes navigation links, welcome messages, or any other content to guide students through the application.
+- **Purpose:** The ETUDIANT component manages student-related functionalities.
+- **Functionality:** Register for a final year project (PFE) and view the list of available PFEs.
 
 #### 6. ENSEIGNANT Component
 
-- **Purpose:** The ENSEIGNANT component manages information related to professors.
-- **Functionality:** It provides functionalities for professors to interact with the system, such as viewing and managing their courses and students.
+- **Purpose:** The ENSEIGNANT component manages professor-related functionalities.
+- **Functionality:** Supervise subjects validated by coordinators.
 
 ### Routing
 
@@ -74,27 +74,21 @@ The Angular front-end project is organized around ten main components, each serv
 
 - **Tailwind CSS:** The project uses Tailwind CSS for styling, allowing for a highly customizable and responsive design.
 
-### Dependencie
+### Dependencies
 
 List the main dependencies for the frontend along with their versions.
 
 ```json
- "devDependencies": {
-    "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.1",
-    "nodemon": "^2.0.22",
-    "string-similarity": "^4.0.4"
-  },
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.3"
-  }
+"dependencies": {
+  "react": "^18.0.0",
+  "react-dom": "^18.0.0",
+  "react-router-dom": "^6.0.0",
+  "tailwindcss": "^3.0.0"
+},
+"devDependencies": {
+  "autoprefixer": "^10.0.0",
+  "postcss": "^8.0.0"
+}
 ```
 
 ## Backend
@@ -131,6 +125,24 @@ The backend is organized into various modules, each responsible for different fu
 ### Dependencies
 
 List the main dependencies for the backend along with their versions.
+
+```json
+"dependencies": {
+  "bcryptjs": "^2.4.3",
+  "cookie-parser": "^1.4.6",
+  "cors": "^2.8.5",
+  "dotenv": "^16.0.3",
+  "express": "^4.18.2",
+  "jsonwebtoken": "^9.0.0",
+  "mongoose": "^7.2.1",
+  "multer": "^1.4.5-lts.1",
+  "nodemailer": "^6.9.3"
+},
+"devDependencies": {
+  "nodemon": "^2.0.22",
+  "string-similarity": "^4.0.4"
+}
+```
 
 ## Getting Started
 
