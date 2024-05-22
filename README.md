@@ -29,7 +29,7 @@ This project uses the MERN stack architecture, which is a powerful, full-stack J
 
 ### Technologies Used
 
-- Angular
+- React
 - Tailwind CSS
 
 ### Frontend Project Structure
@@ -68,15 +68,34 @@ The Angular front-end project is organized around ten main components, each serv
 
 ### Routing
 
-- **Angular Router:** The Angular Router is utilized to navigate between the different components, ensuring a seamless user experience.
+- **React Router:** The React Router is utilized to navigate between the different components, ensuring a seamless user experience.
 
 ### Styling
 
 - **Tailwind CSS:** The project uses Tailwind CSS for styling, allowing for a highly customizable and responsive design.
 
-### Dependencies
+### Dependencie
 
 List the main dependencies for the frontend along with their versions.
+
+```json
+ "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.1",
+    "nodemon": "^2.0.22",
+    "string-similarity": "^4.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3"
+  }
+```
 
 ## Backend
 
