@@ -1,6 +1,6 @@
 # University Department Management Platform
 
-![image](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/a6ca20b7-1935-4c4c-ba56-31b8048f9ba9)
+![Platform Overview](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/a6ca20b7-1935-4c4c-ba56-31b8048f9ba9)
 
 This article introduces our user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
 
@@ -21,7 +21,7 @@ This article introduces our user-friendly platform designed to manage a universi
 The project is a user-friendly platform designed to manage a university department. It handles various aspects including student management, coordinators, and professors. Additionally, it features an admin role for overseeing final year projects and end-of-study projects.
 
 ## Software Architecture
-![mern-stack-b9q1kbudz0](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/9015892a-3a24-4cf8-bf13-0e909314a74f)
+![MERN Stack](https://github.com/aboussakkine-achraf/EMSIPFE/assets/114268936/9015892a-3a24-4cf8-bf13-0e909314a74f)
 
 This project uses the MERN stack architecture, which is a powerful, full-stack JavaScript solution designed to simplify and streamline the development process of modern web applications. Comprising MongoDB, Express.js, React, and Node.js, each component of the MERN stack serves a specific purpose. MongoDB, a NoSQL database, stores application data in a flexible, JSON-like format. Express.js, a lightweight web application framework, handles server-side logic and routes. React, a popular front-end library, enables developers to build dynamic user interfaces with reusable components. Node.js, a runtime environment, allows JavaScript to be used on the server side, ensuring seamless integration between the server and client. Together, these technologies enable the creation of robust, scalable, and maintainable applications with a consistent JavaScript codebase throughout.
 
@@ -108,15 +108,15 @@ The backend is organized into various modules, each responsible for different fu
 - **Purpose:** Handles user registration, login, and authentication.
 - **Functionality:** Implements secure user authentication using JWT, manages user roles and permissions.
 
-#### 2. Project Management
+#### 2. Entreprise Management
 
-- **Purpose:** Manages final year projects and end-of-study projects.
-- **Functionality:** Allows the creation, modification, and deletion of projects, assigns projects to students and coordinators.
+- **Purpose:** Manages Entreprise .
+- **Functionality:** Allows the creation  of entreprise and assigne this PFE's.
 
-#### 3. Data Management
+#### 3. PFEs Management
 
-- **Purpose:** Manages data related to students, professors, and coordinators.
-- **Functionality:** Provides CRUD operations for student, professor, and coordinator data.
+- **Purpose:** Manages data related to PFEs.
+- **Functionality:** create PFE and asign it to student and enseignant.
 
 ### Routing
 
@@ -168,7 +168,7 @@ To get started with the project, follow these steps:
    cd frontend
    npm start
    cd ../backend
-   npm start
+   npx nodemon index.js
    ```
 
 ## Folder Structure
