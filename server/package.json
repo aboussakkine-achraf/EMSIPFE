@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElbazAhmed/Application-Web-Gestion-PFEs.git"
+    "url": "git+https://github.com/aboussakkine-achraf/Application-Web-Gestion-PFEs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ElbazAhmed/Application-Web-Gestion-PFEs/issues"
+    "url": "https://github.com/aboussakkine-achraf/issues"
   },
-  "homepage": "https://github.com/ElbazAhmed/Application-Web-Gestion-PFEs#readme",
+  "homepage": "https://github.com/aboussakkine-achraf/Application-Web-Gestion-PFEs#readme",
   "devDependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
