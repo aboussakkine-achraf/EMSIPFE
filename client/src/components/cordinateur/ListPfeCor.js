@@ -10,7 +10,7 @@ function ListPfeCor() {
   const [data,setData]=useState([])
   const [searchTerm, setSearchTerm] = useState('');
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listePfeValider',{credentials:'include'}).then(resp=>{
+    fetch('http://localhost:4000/listePfeValider',{credentials:'include'}).then(resp=>{
       resp.json().then(pfes=>{
         setData(pfes)
       });

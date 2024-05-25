@@ -8,7 +8,7 @@ const Listpfe = () => {
   const [searchTerm, setSearchTerm] = useState('');
   
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listePfeInscrire',{
+    fetch('http://localhost:4000/listePfeInscrire',{
       credentials:'include',
     }).then(res=>{
     res.json().then(data=>{

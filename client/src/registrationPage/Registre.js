@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Navigate} from "react-router-dom";
-import image from "../assets/inpt.png"
+import image from "../assets/emsi.png"
 import graduation from '../assets/pexels-pavel-danilyuk-7944065.jpg'
 
 function Registre() {
@@ -15,7 +15,7 @@ function Registre() {
   async function regist(e){
     e.preventDefault();
     if(confirmPassword==password){
-      const res=  await fetch('https://emsipfe.vercel.app/registre',{
+      const res=  await fetch('http://localhost:4000/registre',{
             method:'POST',
             body:JSON.stringify({nom,prenom,filier,email,password}),
             headers:{'Content-Type':'application/json'}
@@ -38,7 +38,7 @@ function Registre() {
   return (
     <div className='flex h-[100vh]'>
         <div className='lg:w-[60%] w-[100%] '>
-            <img src={image} alt='INPT logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
+            <img src={image} alt='emsi logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
             <div className='flex flex-col justify-center items-center h-[70vh]'>
                 <h2 className='text-2xl text-sky-600'>REGISTRATION</h2>
                 <p className='py-3 text-xl font-medium'>veuillez saisir vos coordonnées</p>

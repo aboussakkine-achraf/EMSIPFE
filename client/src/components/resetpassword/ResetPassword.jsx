@@ -1,13 +1,13 @@
 import React from 'react'
-import image from '../../assets/inpt.png'
+import image from '../../assets/emsi.png'
 import {Link} from "react-router-dom";
 
 const ResetPassword = () => {
   return (
     <div className='flex h-[100vh]'>
         <div className='lg:w-[60%] w-[100%] flex flex-col justify-between '>
-            <div className="inpt__logo">
-                <img src={image} alt='INPT logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
+            <div className="emsi__logo">
+                <img src={image} alt='emsi logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
             </div>
             <div className='flex flex-col justify-center items-center h-[70vh] py-5'>
                 <div className='text-center w-[60%]'>

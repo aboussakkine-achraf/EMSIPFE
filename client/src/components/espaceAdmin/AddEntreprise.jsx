@@ -17,7 +17,7 @@ const AddEntreprise = () => {
   async function nouveauEntreprise(e){
     e.preventDefault();
     console.log({nom,secteur,Representant,emailRep,numeroRep,Localisation,email,numero});
-    const response=await fetch('https://emsipfe.vercel.app/addEntreprise',{
+    const response=await fetch('http://localhost:4000/addEntreprise',{
       method:'POST',
       body:JSON.stringify({nom,secteur,Representant,emailRep,numeroRep,Localisation,email,numero}),
       headers:{'Content-Type':'application/json'},

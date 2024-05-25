@@ -1,5 +1,5 @@
 
-import image from '../../assets/inpt.png'
+import image from '../../assets/emsi.png'
 import emailjs from '@emailjs/browser';
 import {Link} from "react-router-dom";
 import React, { useRef } from 'react'
@@ -21,8 +21,8 @@ const Contact = () => {
   return (
     <div className='flex h-[100vh]'>
         <div className='lg:w-[60%] w-[100%] flex flex-col justify-between'>
-            <div className="inpt__logo">
-                <img src={image} alt='INPT logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
+            <div className="emsi__logo">
+                <img src={image} alt='emsi logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
             </div>
             <div className='flex justify-center items-center text-center'>
                 <div className="contact__container grid w-[70%] ">

@@ -19,7 +19,7 @@ function Dropdowns({childrent}) {
   const {userInfo,setUserInfo}=useContext(Usercontext)
   
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/refrech',{credentials:'include'})
+    fetch('http://localhost:4000/refrech',{credentials:'include'})
     .then(res=>{
       res.json().then(info=>{
         setData(info)
@@ -30,7 +30,7 @@ function Dropdowns({childrent}) {
   
 
   function logout(){
-    fetch('https://emsipfe.vercel.app/logout',{
+    fetch('http://localhost:4000/logout',{
       credentials:"include",
       method:'POST'
     })

@@ -22,17 +22,17 @@ const salt=bcrypt.genSaltSync(10);
 
 app.use(express.json());
 app.use(cookieParser());
-// app.use(cors({credentials:true,origin: 'https://emsipfe.vercel.app/'}));
-app.use(cors({
-    credentials: true,
-    origin: 'https://emsipfe.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
-  }));
+app.use(cors({credentials:true,origin: 'http://localhost:3000'}));
+// app.use(cors({
+//     credentials: true,
+//     origin: 'https://emsipfe.vercel.app',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE']
+//   }));
 
 //connect database
 
 
-mongoose.connect('mongodb+srv://aboussakkine:PjKRp8HQomW5L97n@cluster0.1tjkxgp.mongodb.net/emsi?retryWrites=true&w=majority&appName=Cluster0',{
+mongoose.connect('mongodb://localhost:27017/emsi',{
 
     useNewUrlParser: true, 
     useUnifiedTopology: true,

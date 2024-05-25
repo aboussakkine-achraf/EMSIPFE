@@ -1,5 +1,5 @@
 import React from 'react'
-import inpt from '../../assets/inpt.png'
+import emsi from '../../assets/emsi.png'
 import './home.css'
 import {Link} from "react-router-dom";
 import Registre from '../../registrationPage/Registre';
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
     </header>
     <nav className='Container max-w-full flex justify-between items-center bg-white text-black py-4'>
-        <div className="nav__logo" ><img src={inpt} alt="inpt logo" /></div>
+        <div className="nav__logo" ><img src={emsi} alt="emsi logo" /></div>
         <div className="nav__links">
             <ul className="nav__list flex gap-6 font-semibold">
                 <li className="nav__link"><a href="/">Acceuil</a></li>

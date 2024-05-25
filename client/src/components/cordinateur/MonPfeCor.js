@@ -6,7 +6,7 @@ function MonPfeCor() {
 
   const [data,setData]=useState([])
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listencadrer',{credentials:'include'}).then(resp=>{
+    fetch('http://localhost:4000/listencadrer',{credentials:'include'}).then(resp=>{
       resp.json().then(pfes=>{
         setData(pfes)
       });

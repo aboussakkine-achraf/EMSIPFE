@@ -19,7 +19,7 @@ const Addpfe = () => {
 
   const fetchEntrepriseOptions = async () => {
     try {
-      const response = await fetch('https://emsipfe.vercel.app/listeEntreprise');
+      const response = await fetch('http://localhost:4000/listeEntreprise');
       if (response.ok) {
         const data = await response.json();
         setEntrepriseOptions(data); // Update the entrepriseOptions state with fetched data
@@ -34,7 +34,7 @@ const Addpfe = () => {
   async function nouveauPfe(e) {
     if (!quitter) {
       e.preventDefault();
-      const response = await fetch('https://emsipfe.vercel.app/addpfe', {
+      const response = await fetch('http://localhost:4000/addpfe', {
         method: 'POST',
         body: JSON.stringify({ titre, domainEtude, problematique, entreprise: selectedEntreprise, description }),
         headers: { 'Content-Type': 'application/json' },

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import image from "../assets/inpt.png"
+import image from "../assets/emsi.png"
 
 function SideBare({children}) {
     const menuItem=[
@@ -23,7 +23,7 @@ function SideBare({children}) {
   return (
         <div className=' lg:w-[18%] w-[30%] h-[100vh]'>
             <div className=''>
-                <img src={image} alt='INPT logo' className='lg:w-[90%] lg:mx-auto w-[70%] py-3' />
+                <img src={image} alt='emsi logo' className='lg:w-[90%] lg:mx-auto w-[70%] py-3' />
             </div>
             <div className='flex flex-col justify-center h-[75vh] text-center'>
             {

@@ -9,7 +9,7 @@ function ListPfeNonValid() {
   const [data,setData]=useState([])
   const [searchTerm, setSearchTerm] = useState('');
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listePfeNonValider',{credentials:'include'}).then(resp=>{
+    fetch('http://localhost:4000/listePfeNonValider',{credentials:'include'}).then(resp=>{
       resp.json().then(pfes=>{
         setData(pfes)
       });

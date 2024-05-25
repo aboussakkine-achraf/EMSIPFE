@@ -8,7 +8,7 @@ function ListePfe() {
   const [data,setData]=useState([])
 
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listePfeValider',{
+    fetch('http://localhost:4000/listePfeValider',{
       credentials:'include'
     }).then(resp=>{
       resp.json().then(pfes=>{

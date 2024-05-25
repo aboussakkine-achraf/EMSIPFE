@@ -12,7 +12,7 @@ const ListEntreprise = () => {
   const [searchTerm, setSearchTerm] = useState('');
   
   useEffect(()=>{
-    fetch('https://emsipfe.vercel.app/listeEntreprise',{
+    fetch('http://localhost:4000/listeEntreprise',{
       credentials:'include',
     }).then(res=>{
     res.json().then(data=>{

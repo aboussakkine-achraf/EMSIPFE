@@ -17,7 +17,7 @@ const AddUsers = () => {
   async function nouveauUser(e){
     e.preventDefault();
     console.log({nom,prenom,filier,specialite,email,password,role});
-    const response=await fetch('https://emsipfe.vercel.app/addUser',{
+    const response=await fetch('http://localhost:4000/addUser',{
       method:'POST',
       body:JSON.stringify({nom,prenom,filier,specialite,email,password,role}),
       headers:{'Content-Type':'application/json'},

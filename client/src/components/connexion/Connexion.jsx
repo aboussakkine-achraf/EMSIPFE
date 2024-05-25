@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../assets/inpt.png'
+import image from '../../assets/emsi.png'
 import {Link, Navigate} from "react-router-dom";
 import { useState } from 'react';
 import {Usercontext} from '../Usercontext'
@@ -17,7 +17,7 @@ const Connexion = () => {
 
     async function login(e){
         e.preventDefault();
-        const res=await fetch('https://emsipfe.vercel.app/login',{
+        const res=await fetch('http://localhost:4000/login',{
             method:'POST',
             body:JSON.stringify({email,password}),
             headers:{'Content-Type':'application/json'},
@@ -34,7 +34,7 @@ const Connexion = () => {
     }
 
     useEffect(()=>{
-        fetch('https://emsipfe.vercel.app/login',{
+        fetch('http://localhost:4000/login',{
             credentials:"include"
         }).then(res=>{
             res.json().then(user=>{
@@ -59,8 +59,8 @@ const Connexion = () => {
     return (
     <div className='flex h-[100vh]'>
         <div className='lg:w-[60%] w-[100%] flex flex-col justify-between'>
-            <div className="inpt__logo">
-                <img src={image} alt='INPT logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
+            <div className="emsi__logo">
+                <img src={image} alt='emsi logo' className='lg:w-[20%] lg:ml-3 mx-auto mt-5  w-[40%]'/>
             </div>
             <div className='flex flex-col justify-center items-center h-[70vh] py-5'>
                 <div className='text-center'>

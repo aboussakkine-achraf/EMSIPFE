@@ -7,7 +7,7 @@ function InforPers() {
     const [data,setData]=useState({})
 
     useEffect(()=>{
-        fetch('https://emsipfe.vercel.app/refrech',{
+        fetch('http://localhost:4000/refrech',{
             credentials:'include'
         }).then(res=>{
             res.json().then(data=>{
